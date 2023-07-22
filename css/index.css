@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../assets/fonts/Coolvetica.otf");
+}
+@font-face {
+  font-family: "Trajan";
+  src: url("../assets/fonts/Trajan.ttf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../assets/fonts/Helvetica.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("../assets/images/login_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* common usecase */
+.gold-text {
+  color: #bda145;
+}
+.link {
+  color: black;
+}
+.welcome {
+  font-family: "Coolvetica";
+}
+
+header {
+  display: flex;
+  font-family: "Trajan";
+  padding: 30px 50px;
+  align-items: center;
+  gap: 20px;
+  color: #ffffff;
+}
+header img {
+  height: 6rem;
+  width: 6rem;
+}
+main {
+  padding: 60px 150px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica";
+}
+main h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 25px;
+}
+.input-container {
+  position: relative;
+}
+.input-container img {
+  position: absolute;
+  left: -10px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.input-icon {
+  width: 70px;
+  height: 35px;
+}
+
+.login-input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.login-input input[type="text"],
+.login-input input[type="password"] {
+  width: 100%;
+  font-size: 18px;
+  margin: 0 0 10px;
+  padding: 20px 40px 20px 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.remember-me {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.remember-me input[type="checkbox"] {
+  margin-right: 5px;
+}
+form button {
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 5px 20px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(
+    to right,
+    rgb(37, 62, 143),
+    rgb(189, 161, 69)
+  );
+}
